@@ -335,64 +335,6 @@ src="https://www.facebook.com/tr?id=1649142148751607&amp;ev=PageView&amp;noscrip
                 </div>
             </div>
         </div>
-
-
-<!--Loader section -->
-<!DOCTYPE>
-<html lang='en'>
-<head>
-    <style>
-        .loading-gif {
-            max-width: 500px;
-        }
-
-        .pre-loader {
-            position: fixed;
-            z-index: 100; /** make sure this is the highest value compared to all other divs **/
-            top: 0;
-            left: 0;
-            background: #191f26;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            width: 100%;
-        }
-
-        .pre-loader.hidden {
-            animation: fadeOut 2s; /** change to 1s */
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeOut {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-    </style>
-</head>
-<body>
-<!--- Your content goes here -->
-<div class='pre-loader'>
-    <img class='loading-gif' alt='loading' src="public/loading.gif"/>
-</div>
-
-<!-- js to hide preloader loading is done -->
-<script type='text/javascript'>
-    window.addEventListener('load', function () {
-        document.querySelector('.pre-loader').className += ' hidden';
-    });
-</script>
-</body>
-</html>
-
-<!--Loader section end-->
-
-
-
-
-        
         <div class="cleric-product produc-featured rows-space-20">
             <div class="container">
                 <h3 class="custom_blog_title">
@@ -1850,7 +1792,62 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 <!--End of Tawk.to Script-->
 
+<!--Loader section -->
+<!DOCTYPE>
+<html lang='en'>
+<head>
+    <style>
+        .loading-gif {
+            max-width: 500px;
+        }
 
+        .pre-loader {
+            position: fixed;
+            z-index: 100; /** make sure this is the highest value compared to all other divs **/
+            top: 0;
+            left: 0;
+            background: #191f26;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        .pre-loader.hidden {
+            animation: fadeOut 2s; /** change to 1s */
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+<!--- Your content goes here -->
+<div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="public/loading.gif"/>
+</div>
+
+<!-- js to hide preloader loading is done -->
+<script type='text/javascript'>
+    window.addEventListener('load', function () {
+        document.querySelector('.pre-loader').className += ' hidden';
+    });
+</script>
+</body>
+</html>
+
+<!--Loader section end-->
+
+
+
+
+        
 
 <!--loader END-->
 
